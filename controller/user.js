@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 exports.noti = async (req, res) => {
   try {
     const userId = uuidv4();
+    console.log(userId)
     const newUser = new user({
       _id: userId
     });

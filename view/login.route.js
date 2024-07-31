@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/login',Router);
+//app.use('/login',Router);
 Router.post('/',logincontroler.login);
 
 module.exports = Router;

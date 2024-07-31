@@ -23,6 +23,7 @@ exports.signup = async (req, res) => {
 
         const hashedPassword = await bcrypt.hash(password, 10);
         const userId = uuidv4();
+        console.log(userId)
 
         const newUser = new signup({
             _id: userId,

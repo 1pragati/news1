@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const secretKey = process.env.secret_key;
-
+console.log(secretKey)
 module.exports = (req, res, next) => {
     // Get token from headers
     const token = req.headers.authorization;

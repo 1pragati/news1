@@ -3,8 +3,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const secretKey = process.env.secret_key;
-
+console.log(secretKey)
 exports.generateToken = (userId) => {
+    console.log(userId)
     const payload = {
         userId: userId
         // Add other user-related data if needed
