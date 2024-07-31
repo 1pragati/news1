@@ -26,7 +26,7 @@ exports.login = async (req, res) => {
         }
 
 const token=jwtmodule.generateToken({email});
-        console.log(jwtmodule);
+
         console.log("Login successful",token);
         res.status(200).json({ message: 'Login successful',token});
     } catch (error) {
